@@ -1,0 +1,27 @@
+<svg
+  stroke="currentColor"
+  fill="currentColor"
+  stroke-width="0"
+  viewBox="0 0 16 16"
+  height="100px"
+  width="100px"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Head -->
+  <rect x="3" y="3" width="10" height="10" rx="1.5" ry="1.5" fill="none" stroke="currentColor" stroke-width="1.0"></rect>
+
+  <!-- Eyes outer -->
+  <circle cx="5" cy="6" r="0.8" fill="none" stroke="currentColor" stroke-width="0.3"></circle>
+  <circle cx="11" cy="6" r="0.8" fill="none" stroke="currentColor" stroke-width="0.3"></circle>
+
+  <!-- Eyes inner -->
+  <circle cx="5" cy="6" r="0.3" fill="currentColor"></circle>
+  <circle cx="11" cy="6" r="0.3" fill="currentColor"></circle>
+
+  <!-- Mouth -->
+  <rect x="5" y="9.5" width="6" height="1" fill="currentColor" rx="0.2" ry="0.2"></rect>
+
+  <!-- Antenna -->
+  <line x1="8" y1="1" x2="8" y2="3" stroke="currentColor" stroke-width="0.5"></line>
+  <circle cx="8" cy="0.8" r="0.5"></circle>
+</svg>

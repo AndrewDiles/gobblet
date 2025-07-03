@@ -5,10 +5,11 @@ const initialGameState = () => ({
   revisingHistory: false,
   moveIndex: 0,
   moves: [],
-  player1: "Player 1",
+  player1: "PLAYER 1",
 	player1IsBot: false,
-  player2: "Player 2",
+  player2: "PLAYER 2",
 	player2IsBot: false,
+	ai_level: 1,
   mute: true,
 });
 
