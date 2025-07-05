@@ -5,7 +5,9 @@
 // 3 : game is a draw
 // 4 : error
 
-const calculateResult = (activeBoard) => {
+// TODO: only result in draw if no pieces left to play
+const calculateResult = (activeBoard, allMovesMade) => {
+	console.log({allMovesMade})
   try {
     const playerNumbersOnlyBoard = activeBoard.map((cell) => Math.floor(cell));
 
@@ -68,8 +70,10 @@ const calculateResult = (activeBoard) => {
       return playerNumbersOnlyBoard[2];
 
     // game ongoing
-    if (playerNumbersOnlyBoard.includes(0)) return 0;
-    return 3;
+    // if (playerNumbersOnlyBoard.includes(0)) return 0;
+		// return 3
+		if (allMovesMade) return 3
+    return 0
   } catch (error) {
     console.log(error.message);
     return 4;
