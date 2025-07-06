@@ -71,7 +71,7 @@ const PlayableArea = ({
   };
 
   return (
-    <Container id="playable-area" $scale={scale} $flexDirection={flexDirection}>
+    <Container id="playable-area" $scale={scale} $flexDirection={flexDirection} $result={result}>
       <DndContext onDragEnd={handleDragEnd}>
         <section id="board">
           {CELL_IDS.map((cellId, index) => (
@@ -110,6 +110,7 @@ const Container = styled.main`
   position: relative;
   padding: 0;
   margin: auto;
+	margin-top: ${({$result}) => $result > 0 && "20px"};
   flex-wrap: nowrap;
   width: fit-content;
   display: flex;

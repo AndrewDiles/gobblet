@@ -6,6 +6,7 @@ Hopefully this entertains them for some time.
 
 MVP met.
 
-One stretch goal remains:
+A couple of stretch goals remains:
 
-- code improved ai for a better challenge when playing versus a bot.
+- Visual indication when bot is taking turn.
+- Code improved ai for a better challenge when playing versus a bot.

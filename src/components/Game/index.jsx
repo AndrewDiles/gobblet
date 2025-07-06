@@ -11,17 +11,13 @@ import useBoardSizing from "./gameHooks/useBoardSizing";
 import useBotMove from "./gameHooks/useBotMove";
 
 // helpers
-import calcActiveBoard from "../../helpers/calcActiveBoard";
-import calculateResult from "../../helpers/calculateResult";
 import calculateIsBotTurn from "../../helpers/calculateIsBotTurn";
 
 // assets
 import gameCompleteSound from "../../assets/sounds/gameOver.mp3";
 import chipSound from "../../assets/sounds/chip.mp3"
 
-const Game = ({ game, setGame }) => {
-  const activeBoard = calcActiveBoard(game.moves, game.moveIndex);
-  const result = activeBoard ? calculateResult(activeBoard, game.moveIndex === 12) : 4;
+const Game = ({ game, setGame, result, activeBoard }) => {
   const isBotTurn = calculateIsBotTurn(game);
 	
 	const {scale, flexDirection} = useBoardSizing()

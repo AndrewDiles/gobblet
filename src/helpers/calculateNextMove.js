@@ -4,7 +4,7 @@ import calcAllValidMoves from "./calcAllValidMoves";
 
 const calculateNextMove = (activeBoard, game) => {
 	try {
-		// const {activePlayer , ai_level, moves, moveIndex} = game;
+		const {activePlayer , ai_level, moves, moveIndex} = game;
 		// const movesMade = moves.filter((m, index) => index < moveIndex);
 		
 		const validMoves = calcAllValidMoves({activeBoard, activePlayer: game.activePlayer, game});
