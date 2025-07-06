@@ -21,4 +21,9 @@ const Container = styled.section`
   grid-gap: 1rem;
   grid-template-columns: 1fr 1fr;
 	max-width: 600px;
+	@media only screen and (max-width: 600px) {
+    & {
+      grid-template-columns: 1fr;
+    }
+  }
 `;

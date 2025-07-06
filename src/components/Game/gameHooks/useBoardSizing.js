@@ -10,7 +10,7 @@ const useBoardScale = () => {
     const handleSizeChange = () => {
       const windowHeight = window.innerHeight;
       const windowWidth = window.innerWidth;
-      let heightModifier = 0;
+      let heightModifier = 70; // this is to make space for the mute button
       const header = document.querySelector("header");
       if (
         header &&
