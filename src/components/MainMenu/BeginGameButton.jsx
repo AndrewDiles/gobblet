@@ -8,7 +8,8 @@ const BeginGameButton = ({ game, setGame }) => {
 
   return (
     <StartButton
-			disabled = {!game.player1||!game.player2}
+      className="menu-button"
+      disabled={!game.player1 || !game.player2}
       onClick={() => {
         !game.mute && playStartSound();
         startGame(setGame, {

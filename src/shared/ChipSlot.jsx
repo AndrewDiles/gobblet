@@ -1,10 +1,9 @@
+import { memo } from "react";
 import styled from "styled-components";
 
-const ChipSlot = ({ player }) => (
-  <Chip $player={player} />
-);
+const ChipSlot = ({ player }) => <Chip $player={player} />;
 
-export default ChipSlot;
+export default memo(ChipSlot);
 
 const Chip = styled.div`
   height: 30px;

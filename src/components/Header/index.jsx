@@ -1,11 +1,22 @@
+import { memo } from "react";
 import GobbletHeading from "./GobbletHeading";
+import styled from "styled-components";
 
-const Header = () => {
+const Header = ({gameOn}) => {
   return (
-    <header>
+    <VanishingHeader $gameOn={gameOn}>
       <GobbletHeading />
-    </header>
+    </VanishingHeader>
   );
 };
 
-export default Header
+export default memo(Header);
+
+
+const VanishingHeader = styled.header`
+  @media only screen and (orientation: landscape) and (max-height: 750px) {
+    & {
+      display: ${({ $gameOn }) => $gameOn && "none"};
+    }
+  }
+`;

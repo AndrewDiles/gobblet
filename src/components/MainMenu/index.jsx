@@ -7,6 +7,7 @@ const MainMenu = ({game, setGame}) => {
       <SelectNameAndColors game={game} setGame={setGame} />
       <BeginGameButton game={game} setGame={setGame} />
       <a
+				className="menu-button"
         href="https://themindcafe.com.sg/wp-content/uploads/2018/07/Gobblet-Gobblers.pdf"
         target="_blank"
       >
